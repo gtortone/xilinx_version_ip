@@ -9,4 +9,12 @@
 
 - run ```petalinux-config``` and select ```plversion``` in ```modules```
 
+- edit ```project-spec/meta-user/recipes-bsp/device-tree/files/system-user.dtsi``` and add an overlay with correct ```compatible``` property:
+
+```
+&version_ip_v1_0 {
+   compatible = "xlnx,version-ip-1.0";
+};
+```
+
 - build PetaLinux with ```petalinux-build```
