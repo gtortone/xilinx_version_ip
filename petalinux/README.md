@@ -7,7 +7,7 @@
 
 - append ```CONFIG_plversion```  to ```meta-user/conf/user-rootfsconfig```
 
-- run ```petalinux-config``` and select ```plversion``` in ```modules```
+- run ```petalinux-config -c rootfs``` and select ```plversion``` in ```modules```
 
 - edit ```project-spec/meta-user/recipes-bsp/device-tree/files/system-user.dtsi``` and add an overlay with correct ```compatible``` property:
 
