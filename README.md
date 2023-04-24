@@ -13,3 +13,9 @@ for the compilation data and time and git hash that are updated by means of a TC
 that start automatically when the synthesis is started in vivado. Then these generics are
 passed to a block connected to the processor bus and read back via a command in
 baremetal or Linux.
+
+This driver will instantiate four read-only attributes in the sysfs and these files can be used to retrieve the values.
+
+The device entry is created under ```/sys/bus/platform/devices/``` . The name is taken from the device tree entry (and therefore also contains the address).
+
+The attribute files can be read from there in order to obtain the values.
