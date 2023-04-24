@@ -7,6 +7,6 @@
 
 - append ```CONFIG_plversion```  to ```meta-user/conf/user-rootfsconfig```
 
-- run ```petalinux-config``` and select ```plversion``` in ```mdoules```
+- run ```petalinux-config``` and select ```plversion``` in ```modules```
 
 - build PetaLinux with ```petalinux-build```
